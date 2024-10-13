@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background-color: black;  
+}
+a{
+    text-decoration: none; 
+}
+.nav{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem; 
+    width: 100%;
+    height: 3rem;
+    position: sticky;
+    top: 0px;
+}
+.nav .logo{
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.nav .logo i{
+    font-size: 2rem;
+    align-items: center;
+}
+.nav .mid-nav{
+    display: flex;
+    position: absolute;
+    right: 32rem;    
+}
+@media(max-width:1300px){
+    .mid-nav{
+        position: fixed;
+        left: 110px;
+    }
+
+}
+.nav .mid-nav .search-bar{
+    display: flex;
+    height: 2.8rem;   
+    width: 31.25rem;
+    align-items: center;
+}
+.hlogo{
+    height: 3rem;
+    width: 3rem;
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 50%; 
+}
+.hlogo i{
+    font-size: 1.3rem;
+    background-color: #1f1f1f;
+}
+ .search-bar input{
+    width: 100%;
+    height: 100%;
+    padding: 0.75rem 4rem 0.75rem 2.5rem;
+    border-radius: 1.5rem;
+    border: none;
+    background-color: #1f1f1f;
+    color: black;
+    margin-right: 5px;
+}
+.search-bar input:hover{
+    background-color: rgba(255, 255, 255, 0.151);
+    border: white 1px solid;
+}
+.search-bar a img{
+   height: 1.5rem;
+   position: relative;
+   left: -65px;
+   border-left: white solid 1px;
+  padding-left: 1.5rem;
+  background-color: #1f1f1f;
+}
+.search-bar a i{
+    position: relative;
+    right: -1.875rem;   
+}
+.nav .end-nav{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0.625rem;
+    margin-right: 1.25rem;
+}
+@media (max-width: 1200px) {
+    .hide{
+        display: none;
+    }
+}
+.btnr{
+    margin-left: 10px;
+}
+.btn{
+    height: 1.5rem;
+    width: 9.375rem; 
+    transition: all ease 0.3s;
+}
+.btn:hover{
+    transform: scale(1.08);
+}
+.btn button{
+    padding: 4px 16px;
+    font-size:13px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    font-weight: 1000;
+    width: 150px;
+    height: 30px;
+    margin-right: 50px;    
+}
+.btn i{
+    margin-right: 5px;  
+}
+.profie-logo a{
+    font-size: 0.8em;
+    font-weight: 1000;
+    border-radius: 100%;
+    border: #1f1f1f 10px solid;
+    background-color: brown;
+    padding: 8px;
+    color: black;
+}
+.bell i{
+    margin: 10px;
+    position: relative;
+    top:7px;
+    right: 10px;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+.bell i:hover{
+    opacity: 1;
+    transform: scale(1.02);
+}
+.left-slide{
+    background-color: #121212;
+    height: 620px;
+    width: 400px;
+    border-radius: 0.8rem;
+    margin: 10px 0px 10px 10px;
+    position: sticky;
+    top: 70px;
+}
+.library{
+   display: flex;
+   justify-content: space-between;
+   width: 380px;
+   height: 80px; 
+   padding: 10px;
+   margin: 10px; 
+}
+.library img{
+   width: 20px;
+}
+.a {
+    display: flex;
+    align-items: center;  
+}
+.a a{
+    margin-right: 20px;  
+    opacity: 0.8;
+    transition: all ease 0.3s;
+}
+.a a:hover{
+    opacity: 1;
+    transform: scale(1.02);
+}
+.aa {
+    display: flex;
+    align-items: center;
+    margin-left:5px ;  
+}
+.aa a{
+    margin-left: 15px;
+    opacity: 0.8;
+    font-size: 1.2em;
+    transition: all ease o.4s;
+}
+.aa a:hover{
+    opacity: 1;
+    transform: scale(1.02);
+}
+.box{
+    width: 370px;
+    height: 130px;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 20px 16px 20px;
+    border-radius: 0.75rem;
+    margin: 20px 20px 30px 15px;
+}
+.first{
+    font-size: 16px;
+    font-weight: 600;
+}
+.secnd{
+    font-size: 14px; 
+}
+ .contentt{
+    display: flex;
+    height: 80vh;
+ }
+ .main-content{
+    border-radius: 0.8rem;
+    margin: 10px 0px 10px 10px;
+    background-color: #1f1f1f;
+    overflow: auto;
+    height: 620px;   
+ }
+ .sticy-nav{
+    width: 100%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: #1f1f1f;
+    padding: 10px 20px;
+    z-index: 10;
+ }
+ .sticy-nav a button{
+    margin-right: 40px;
+    border: none;
+    border-radius: 50px;
+    padding: 4px 12px;
+ }
+ .sticy-nav1 button{
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    width: 45px;
+    height: 32px;  
+ }
+ .sticy-nav2 button{
+    background-color: rgba(0, 0, 0, 0.159);
+    height: 32px;
+    font-size: 14px;
+    font-weight: 700;
+ }
+ .sticy-nav2 button:hover{
+    background-color: rgba(255, 255, 255, 0.092);
+ }
+ .recent-song{
+    display: flex;
+    flex-wrap: wrap;  
+ }
+ .recent-song .recent{
+    display: flex;
+    margin-top: 1rem; 
+    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+    height: 3rem;
+    width:15rem ;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.3rem;
+    font-weight: 600;
+    transition: all ease 0.2s;
+ }
+ .recent:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    border: white 1px solid;
+    transform: scale(1.05);
+ }
+ .recent img{
+    border-radius: 0.3rem 0 0 0.3rem;
+    height: 100%;
+    margin-right: 0.5rem ;
+ }
+ .hbaner {
+    display: flex;
+    justify-content:space-between;
+    width: 40px;
+    width: 1100px;
+    font-size: 1.5rem;
+    margin: 1rem;
+ }
+ .album{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ }
+ .album .card{
+    width: 11rem;
+    height: 14.25rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+   padding: 5px; 
+   border-radius: 0.6rem;
+   transition: all ease 0.3s;
+ }
+ .album .card:hover{
+    background-color: #ffffff18;
+    transform: scale(1.06);
+ }
+ .card img{
+    width: 100%;
+    border-radius: 10px;
+ }
+ .main-content-footer{
+    height: 360px;
+ }
+ .link{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+ }
+ .link ul{
+    list-style: none;
+ }
+ .link ul li{
+    margin-top: 10px;
+    opacity: 0.8;
+    opacity: 0.7;
+ }
+ .link ul li:hover{
+    text-decoration: underline;
+    opacity: 1;
+ }
+ hr{
+    width: 70%;
+    position: relative;
+   right: -10rem;
+   top: 5rem;
+  opacity: 0.7;
+ }
+.social_media{
+    display: flex;
+    justify-content: center;
+}
+.social_media a i{
+    margin-right: 2rem;
+    font-size: 2rem;
+    position: relative;
+    top: 7.5rem;
+  opacity: 0.7;
+  transition: all ease 0.3;
+}
+.social_media i:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+.music-control{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    background-color: #121212;
+}
+.currunt-song{
+    display: flex;
+    padding: 1rem;
+    position: relative;
+    left: -60px;
+    width: 327px;
+}
+.img img{
+    height: 100%;
+    border-radius: 0.3rem;
+    margin-right: 0.5rem;
+}
+.control{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1rem;
+}
+.scontrol{
+    position: relative;
+    top: 5px;
+}
+.scontrol img{
+    height: 0.8rem;
+    margin-right: 1.2rem; 
+    opacity: 0.7;
+    transition: all ease 0.1s;
+}
+.scontrol img:hover{
+    opacity: 1;
+    transform: scale(1.08);
+}
+.bar input{
+    width: 500px;
+    margin-top: 1rem;
+    appearance: none;
+    cursor: pointer;
+}
+.bar input::-webkit-slider-runnable-track{
+   background-color: #ddd;
+   height: 0.2rem;
+   border-radius: 100%;
+}
+.bar input::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px; 
+}
+.sound a img{
+    height: 1.2rem;
+    margin: 0.8rem; 
+    opacity: 0.7;
+}
+.sound a img:hover{
+    opacity: 1;
+    transform: scale(1.06);
+}
+
+.sound{
+    display: flex;
+    align-items: center;
+    width: 366px;  
+    position: relative;
+    left: 2rem;
+}
+.sound input{
+    width: 6rem;
+}
